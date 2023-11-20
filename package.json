@@ -1,0 +1,14 @@
+{
+  "name": "workit-landing",
+  "version": "1.0.0",
+  "description": "Workit Landing Page for Frontend Mentor",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jason Sherrick",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}
