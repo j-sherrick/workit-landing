@@ -1,0 +1,33 @@
+{
+  "name": "workit-landing",
+  "version": "1.0.0",
+  "description": "This is a solution to the Workit landing page challenge on Frontend Mentor...",
+  "main": "public/index.html",
+  "scripts": {
+   "compile:sass": "sass --watch scss/main.scss css/style.css",
+   "compile:ts": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j-sherrick/workit-landing.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "web-dev",
+    "frontend",
+    "frontend-mentor",
+    "sass",
+    "scss",
+    "bem",
+    "bem-architecture",
+    "coding",
+    "challenge"
+  ],
+  "author": "Jason Sherrick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/j-sherrick/workit-landing/issues"
+  },
+  "homepage": "https://github.com/j-sherrick/workit-landing#readme"
+}
