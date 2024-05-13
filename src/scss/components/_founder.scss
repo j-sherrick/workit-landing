@@ -1,0 +1,27 @@
+.founder {
+  width: 100%;
+  padding-inline: 1rem;
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+
+  &__message {
+    background-color: var(--workit-clr-primary);
+    color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  &__heading {
+    font-weight: 500;
+  }
+
+  &__demo {
+  }
+}

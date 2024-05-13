@@ -1,0 +1,244 @@
+/* CSS Reset */
+/* Box sizing border-box for all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles (bullets/numbers) */
+ul,
+ol,
+menu,
+* li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Remove default hyperlink styles */
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: inherit;
+}
+
+/* Remove default outline styles */
+button,
+input,
+textarea,
+select {
+  outline: none;
+  border: none;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+/* Set the default button behavior */
+button {
+  cursor: pointer;
+  color: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  padding: 0;
+}
+
+:root {
+  --workit-clr-primary: hsla(273, 85%, 13%, 1);
+  --workit-clr-secondary: hsla(150, 100%, 63%, 1);
+  --workit-clr-dark: hsla(271, 12%, 34%, 1);
+  --workit-clr-light: hsla(276, 100%, 99%, 1);
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("/public/assets/fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("/public/assets/fonts/manrope/Manrope-VariableFont_wght.ttf") format("truetype");
+}
+body {
+  font-family: "Manrope", "Poppins", system-ui, "sans-serif";
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+@media (min-width: 48rem) {
+  body {
+    font-size: 1.125rem;
+    line-height: 2rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fraunces", "Georgia", "Times New Roman", serif;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 4rem;
+  font-weight: 500;
+}
+@media (min-width: 48rem) {
+  h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+@media (min-width: 48rem) {
+  h2 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+}
+
+h3 {
+  font-size: 1.75rem;
+  line-height: 2rem;
+}
+@media (min-width: 48rem) {
+  h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+.underline {
+  border-bottom: 3px solid var(--workit-clr-secondary);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+  padding-inline: 1rem;
+  position: absolute;
+  top: 2rem;
+  z-index: 100;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.menu {
+  color: white;
+}
+
+.cta {
+  background: url('data:image/svg+xml,  <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 200 100"  preserveAspectRatio="none">  <path d="M 0,0           L 200,0           L 200,80           Q 100,90 0,80           Z" fill="hsla(273, 85%, 13%, 1)"/>  </svg>') no-repeat;
+  background-size: cover;
+  color: white;
+  width: 100%;
+}
+.cta__action {
+  margin-top: 8.125rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+.cta__image {
+  margin-top: 1.5rem;
+  width: 320px;
+  height: auto;
+}
+
+.features {
+  display: grid;
+  gap: 2.5rem;
+  justify-items: center;
+  padding-inline: 1rem;
+  margin-top: 4rem;
+}
+
+.feature {
+  display: grid;
+  gap: 1.5rem;
+  text-align: center;
+  color: var(--workit-clr-primary);
+  justify-items: center;
+}
+.feature__number {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 400;
+  border: 1px solid var(--workit-clr-dark);
+  border-radius: 50%;
+  font-family: "Fraunces", serif;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feature__heading {
+  font-weight: 500;
+}
+
+.founder {
+  width: 100%;
+  padding-inline: 1rem;
+}
+.founder__image {
+  width: 100%;
+  height: auto;
+}
+.founder__message {
+  background-color: var(--workit-clr-primary);
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+.founder__heading {
+  font-weight: 500;
+}
+.button {
+  background-color: var(--workit-clr-secondary);
+  color: var(--workit-clr-primary);
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=style.css.map */

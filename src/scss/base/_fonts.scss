@@ -2,7 +2,8 @@
 
 @font-face {
   font-family: 'Fraunces';
-  src: url('/public/assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('truetype');
+  src: url('/public/assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf')
+    format('truetype');
 }
 
 @font-face {
@@ -25,24 +26,36 @@
   line-height: 2.5rem;
 }
 
-body {
-  font-family: 'Manrope', 'Poppins', system-ui, 'sans-serif';
-  font-size: 1.5rem;
+@mixin heading-xs {
+  font-size: 1.75rem;
   line-height: 2rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+body {
+  font-family: 'Manrope', 'Poppins', system-ui, 'sans-serif';
+  font-size: 1rem;
+  line-height: 1.75rem;
+
+  @include breakpoints(md) {
+    font-size: 1.125rem;
+    line-height: 2rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Fraunces', 'Georgia', 'Times New Roman', serif;
 }
 
 h1 {
-  @include heading-sm;
+  @include heading-md;
+  font-weight: 500;
 
   @include breakpoints(md) {
-    @include heading-md;
-  }
-
-  @include breakpoints(lg) {
     @include heading-lg;
   }
 }
@@ -52,5 +65,13 @@ h2 {
 
   @include breakpoints(md) {
     @include heading-md;
+  }
+}
+
+h3 {
+  @include heading-xs;
+
+  @include breakpoints(md) {
+    @include heading-sm;
   }
 }

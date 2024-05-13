@@ -4,8 +4,8 @@
   "description": "This is a solution to the Workit landing page challenge on Frontend Mentor...",
   "main": "public/index.html",
   "scripts": {
-   "compile:sass": "sass --watch scss/main.scss css/style.css",
-   "compile:ts": "tsc -w"
+    "compile:sass": "sass --watch src/scss/style.scss public/assets/css/style.css",
+    "compile:ts": "tsc -w"
   },
   "repository": {
     "type": "git",

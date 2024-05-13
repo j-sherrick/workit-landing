@@ -11,55 +11,79 @@
 </head>
 <body>
 
-<header>
-  <img class="logo" src="./assets/images/logo-light.svg" alt="Workit logo">
-  <a href="./index.html">Apply for access</a>
+<header class="menu">
+  <img class="menu__logo" src="./assets/images/logo-light.svg" alt="Workit logo">
+  <a class="menu__link underline" href="./index.html">Apply for access</a>
 </header>
 
-<main class="cta">
-  <h1 class="cta__title">Data tailored to your needs.</h2>
-  <button class="cta__button">Learn more</button>
-  <img class="cta__image" src="./assets/images/image-hero.webp" alt="A stylized image of a smart phone.">
+<main class="content">
+  <section class="cta">
+    <div class="cta__action">
+      <h1 class="cta__title">Data <span class="underline">tailored</span> to your needs.</h2>
+      <button class="button cta__button">Learn more</button>
+      <img class="cta__image" src="./assets/images/image-hero.webp" alt="A stylized image of a smart phone.">
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <span class="feature__number">1</span>
+      <h3 class="feature__heading">Actionable insights</h3>
+      <p class="feature__description">
+        Optimize your products, improve customer satisfaction and stay ahead of the competition 
+        with our product data analytics.
+      </p>
+    </div>
+  
+    <div class="feature">
+      <span class="feature__number">2</span>
+      <h3 class="feature__heading">Data-driven decistions</h3>
+      <p class="feature__description">
+        Make data-driven decisions with our product data analytics. Our AI-generated reports help 
+        you unlock insights hidden in your product data.
+      </p>
+    </div>
+  
+    <div class="feature">
+      <span class="feature__number">3</span>
+      <h3 class="feature__heading">Always affordable</h3>
+      <p class="feature__description">
+        Always affordable pricing that scales with your business. Get top-quality product data 
+        analytics services without hidden costs or unexpected fees.
+      </p>
+    </div>
+  </section>
+
+  <section class="founder">
+    <img class="founder__image" src="./assets/images/image-founder.webp" alt="A profile image of the founder, Louis Graham">
+    <div class="founder__message">
+      <h2 class="founder__heading">Be the first to test</h2>
+      <p class="founder__demo">
+        Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become a 
+        beta tester for our app and kickstart your company. Apply for access below and I’ll be 
+        in touch to schedule a call.
+      </p>
+      <button class="button founder__button">Apply for access</button>
+    </div>
+  </section>
 </main>
 
-<section class="features">
-  <div class="feature">
-    <span class="feature__number">1</span>
-    <h3 class="feature__heading">Actionable insights</h3>
-    <p class="feature__description">
-      Optimize your products, improve customer satisfaction and stay ahead of the competition 
-      with our product data analytics.
-    </p>
+<footer class="footer">
+  <div class="social">
+    <a href="#" class="social__link">
+      <img src="./assets/images/logo-dark.svg" alt="Workit logo" class="social__icon">
+    </a>
+    <a href="#" class="social__link">
+      <img src="./assets/images/icon-facebook.svg" alt="Facebook logo" class="social__icon">
+    </a>
+    <a href="#" class="social__link">
+      <img src="./assets/images/icon-twitter.svg" alt="Twitter logo" class="social__icon">
+    </a>
+    <a href="#" class="social__link">
+      <img src="./assets/images/icon-instagram.svg" alt="Instagram logo" class="social__icon">
+    </a>
   </div>
-
-  <div class="feature">
-    <span class="feature__number">2</span>
-    <h3 class="feature__heading">Data-driven decistions</h3>
-    <p class="feature__description">
-      Make data-driven decisions with our product data analytics. Our AI-generated reports help 
-      you unlock insights hidden in your product data.
-    </p>
-  </div>
-
-  <div class="feature">
-    <span class="feature__number">3</span>
-    <h3 class="feature__heading">Always affordable</h3>
-    <p class="feature__description">
-      Always affordable pricing that scales with your business. Get top-quality product data 
-      analytics services without hidden costs or unexpected fees.
-    </p>
-  </div>
-</section>
-
-<section class="beta">
-  <h2 class="beta__heading">Be the first to test</h2>
-  <p class="beta__description">
-    Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become a 
-    beta tester for our app and kickstart your company. Apply for access below and I’ll be 
-    in touch to schedule a call.
-  </p>
-  <button class="beta__button">Apply for access</button>
-</section>
+</footer>
 
 </body>
 </html>

@@ -1,0 +1,33 @@
+.features {
+  display: grid;
+  gap: 2.5rem;
+  justify-items: center;
+  padding-inline: 1rem;
+  margin-top: 4rem;
+}
+
+.feature {
+  display: grid;
+  gap: 1.5rem;
+  text-align: center;
+  color: var(--workit-clr-primary);
+  justify-items: center;
+
+  &__number {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: 400;
+    border: 1px solid var(--workit-clr-dark);
+    border-radius: 50%;
+    font-family: 'Fraunces', serif;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__heading {
+    font-weight: 500;
+  }
+}
