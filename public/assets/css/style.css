@@ -220,20 +220,23 @@ main {
 .founder__image {
   width: 100%;
   height: auto;
+  padding: 2rem;
 }
 .founder__message {
   background-color: var(--workit-clr-primary);
   color: white;
   padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
   text-align: center;
   gap: 1rem;
 }
 .founder__heading {
   font-weight: 500;
 }
+.founder__button {
+  width: auto;
+}
+
 .button {
   background-color: var(--workit-clr-secondary);
   color: var(--workit-clr-primary);
