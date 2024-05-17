@@ -3,7 +3,7 @@
   font-weight: 600;
   width: 11.875rem;
   border: 2px solid var(--workit-clr-secondary);
-  box-sizing: border-box;
+  transition: background-color 0.3s ease-in-out;
 
   &__primary {
     background-color: var(--workit-clr-secondary);
