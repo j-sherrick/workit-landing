@@ -1,6 +1,17 @@
 .button {
-  background-color: var(--workit-clr-secondary);
-  color: var(--workit-clr-primary);
   padding: 1rem 1.5rem;
   font-weight: 600;
+  width: 11.875rem;
+  border: 2px solid var(--workit-clr-secondary);
+  box-sizing: border-box;
+
+  &__primary {
+    background-color: var(--workit-clr-secondary);
+    color: var(--workit-clr-primary);
+  }
+
+  &__primary:hover {
+    background-color: var(--workit-clr-primary);
+    color: var(--workit-clr-secondary);
+  }
 }

@@ -6,6 +6,9 @@
     width: 100%;
     height: auto;
     padding: 2rem;
+    position: relative;
+    top: 5.625rem;
+    z-index: -1;
   }
 
   &__message {
@@ -13,6 +16,8 @@
     color: white;
     padding: 2rem;
     display: grid;
+    justify-items: center;
+    align-content: center;
     text-align: center;
     gap: 1rem;
   }
