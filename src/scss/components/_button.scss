@@ -1,17 +1,32 @@
-.button {
-  padding: 1rem 1.5rem;
-  font-weight: 600;
-  width: 11.875rem;
-  border: 2px solid var(--workit-clr-secondary);
-  transition: background-color 0.3s ease-in-out;
+@use '../abstracts/mixins' as *;
 
-  &__primary {
-    background-color: var(--workit-clr-secondary);
-    color: var(--workit-clr-primary);
+.button {
+  font-weight: 700;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+  min-width: 8.3125rem;
+  padding: 0.875rem 1.25rem;
+
+  @include breakpoints(md) {
+    width: 11.875rem;
+    padding: 1rem 1.5rem;
   }
 
-  &__primary:hover {
-    background-color: var(--workit-clr-primary);
-    color: var(--workit-clr-secondary);
+  &__primary {
+    border: 2px solid var(--workit-clr-secondary);
+    background-color: var(--workit-clr-secondary);
+    color: var(--workit-clr-primary);
+
+    &:hover {
+      background-color: var(--workit-clr-primary);
+      color: var(--workit-clr-secondary);
+    }
+  }
+
+  &__secondary {
+    border-bottom: 3px solid var(--workit-clr-secondary);
+    color: white;
+    padding: 0 0 0.25rem 0;
+    width: auto;
   }
 }
