@@ -101,13 +101,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Fraunces 144", "Georgia", "Times New Roman", serif;
+  font-family: "Fraunces", "Georgia", "Times New Roman", serif;
 }
 
 h1 {
   font-size: 3.5rem;
   line-height: 4rem;
-  font-weight: 500;
 }
 @media (min-width: 48rem) {
   h1 {
@@ -129,7 +128,7 @@ h2 {
 
 h3 {
   font-size: 1.75rem;
-  line-height: 2rem;
+  line-height: 2.25rem;
 }
 @media (min-width: 48rem) {
   h3 {
@@ -139,7 +138,17 @@ h3 {
 }
 
 .underline {
+  position: relative;
+}
+.underline::after {
+  content: "";
+  position: absolute;
+  top: 3.5rem;
+  left: 0;
+  width: 100%;
+  height: 1px;
   border-bottom: 3px solid var(--workit-clr-secondary);
+  z-index: 100;
 }
 
 header {
@@ -166,42 +175,57 @@ main {
 }
 
 .cta {
-  background: url('data:image/svg+xml,  <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 200 100"  preserveAspectRatio="none">  <path d="M 0,0           L 200,0           L 200,80           Q 100,90 0,80           Z" fill="hsla(273, 85%, 13%, 1)"/>  </svg>') no-repeat;
+  background: url('data:image/svg+xml,  <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 200 100"  preserveAspectRatio="none">  <path d="M 0,0           L 200,0           L 200,81           Q 100,86 0,81           Z" fill="hsla(273, 85%, 13%, 1)"/>  </svg>') no-repeat;
   background-size: cover;
   color: white;
   width: 100%;
+  padding-inline: 1rem;
 }
 .cta__action {
-  margin-top: 8.125rem;
+  margin-top: 7.75rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2.5rem;
 }
+.cta__title {
+  font-weight: 500;
+  font-size: 3.125rem;
+  line-height: 3.125rem;
+  letter-spacing: -0.05ch;
+  margin-top: 0.25rem;
+  max-width: 573px;
+}
 .cta__image {
   margin-top: 1.5rem;
   width: 320px;
   height: auto;
 }
+@media (min-width: 48rem) {
+  .cta__image {
+    width: 514px;
+  }
+}
 
 .features {
+  background: url('data:image/svg+xml,  <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 200 100"  preserveAspectRatio="none">  <path d="M 0,0           L 200,0           L 200,95           Q 100,100 0,95           Z" fill="hsla(276, 100%, 99%, 1)"/>  </svg>') no-repeat, white;
+  background-size: cover;
   display: grid;
   gap: 2.5rem;
   justify-items: center;
-  padding-inline: 1rem;
-  margin-top: 4rem;
+  padding: 4rem 1rem 5.875rem;
 }
 
 .feature {
   display: grid;
-  gap: 1.5rem;
+  gap: 1.25rem;
   text-align: center;
   color: var(--workit-clr-primary);
   justify-items: center;
 }
 .feature__number {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 2rem;
   font-weight: 400;
   border: 1px solid var(--workit-clr-dark);
@@ -215,37 +239,40 @@ main {
 }
 .feature__heading {
   font-weight: 500;
+  letter-spacing: -0.1ch;
+}
+.feature__description {
+  font-size: 1rem;
+  line-height: 1.75rem;
 }
 
 .founder {
   width: 100%;
-  padding-inline: 1rem;
+  padding: 1.5rem 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .founder__image {
-  width: 100%;
+  width: 281px;
   height: auto;
-  padding: 2rem;
   position: relative;
-  top: 5.625rem;
+  top: 3.25rem;
   z-index: -1;
 }
 .founder__message {
   background-color: var(--workit-clr-primary);
   color: white;
   padding: 2rem;
-  display: grid;
-  justify-items: center;
-  align-content: center;
   text-align: center;
-  gap: 1rem;
 }
 .founder__heading {
-  font-weight: 200;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }
-.founder__button {
-  width: auto;
+.founder__demo {
+  margin-bottom: 2rem;
 }
-
 .button {
   font-weight: 700;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;

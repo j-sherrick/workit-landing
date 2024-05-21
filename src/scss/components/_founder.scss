@@ -1,13 +1,15 @@
 .founder {
   width: 100%;
-  padding-inline: 1rem;
+  padding: 1.5rem 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &__image {
-    width: 100%;
+    width: 281px;
     height: auto;
-    padding: 2rem;
     position: relative;
-    top: 5.625rem;
+    top: 3.25rem;
     z-index: -1;
   }
 
@@ -15,21 +17,19 @@
     background-color: var(--workit-clr-primary);
     color: white;
     padding: 2rem;
-    display: grid;
-    justify-items: center;
-    align-content: center;
     text-align: center;
-    gap: 1rem;
   }
 
   &__heading {
-    font-weight: 200;
+    font-weight: 500;
+    margin-bottom: 1rem;
   }
 
   &__demo {
+    margin-bottom: 2rem;
   }
 
   &__button {
-    width: auto;
+    // width: auto;
   }
 }

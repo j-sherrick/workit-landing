@@ -1,20 +1,32 @@
 .features {
+  background: url('data:image/svg+xml,\
+  <svg xmlns="http://www.w3.org/2000/svg"\
+  viewBox="0 0 200 100"\
+  preserveAspectRatio="none">\
+  <path d="M 0,0\
+           L 200,0\
+           L 200,95\
+           Q 100,100 0,95\
+           Z" fill="hsla(276, 100%, 99%, 1)"/>\
+  </svg>')
+      no-repeat,
+    white;
+  background-size: cover;
   display: grid;
   gap: 2.5rem;
   justify-items: center;
-  padding-inline: 1rem;
-  margin-top: 4rem;
+  padding: 4rem 1rem 5.875rem;
 }
 
 .feature {
   display: grid;
-  gap: 1.5rem;
+  gap: 1.25rem;
   text-align: center;
   color: var(--workit-clr-primary);
   justify-items: center;
 
   &__number {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     line-height: 2rem;
     font-weight: 400;
     border: 1px solid var(--workit-clr-dark);
@@ -29,5 +41,11 @@
 
   &__heading {
     font-weight: 500;
+    letter-spacing: -0.1ch;
+  }
+
+  &__description {
+    font-size: 1rem;
+    line-height: 1.75rem;
   }
 }

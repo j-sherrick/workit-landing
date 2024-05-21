@@ -1,3 +1,5 @@
+@use '../abstracts/mixins' as *;
+
 .cta {
   background: url('data:image/svg+xml,\
   <svg xmlns="http://www.w3.org/2000/svg"\
@@ -5,17 +7,18 @@
   preserveAspectRatio="none">\
   <path d="M 0,0\
            L 200,0\
-           L 200,80\
-           Q 100,90 0,80\
+           L 200,81\
+           Q 100,86 0,81\
            Z" fill="hsla(273, 85%, 13%, 1)"/>\
   </svg>')
     no-repeat;
   background-size: cover;
   color: white;
   width: 100%;
+  padding-inline: 1rem;
 
   &__action {
-    margin-top: 8.125rem;
+    margin-top: 7.75rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -23,9 +26,23 @@
     gap: 2.5rem;
   }
 
+  &__title {
+    font-weight: 500;
+    font-size: 3.125rem;
+    line-height: 3.125rem;
+    letter-spacing: -0.05ch;
+    margin-top: 0.25rem;
+
+    max-width: 573px;
+  }
+
   &__image {
     margin-top: 1.5rem;
     width: 320px;
     height: auto;
+
+    @include breakpoints('md') {
+      width: 514px;
+    }
   }
 }
