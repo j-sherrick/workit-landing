@@ -1,3 +1,5 @@
+@use '../abstracts/mixins' as *;
+
 .features {
   background: url('data:image/svg+xml,\
   <svg xmlns="http://www.w3.org/2000/svg"\
@@ -20,10 +22,16 @@
 
 .feature {
   display: grid;
+  justify-items: center;
   gap: 1.25rem;
+
   text-align: center;
   color: var(--workit-clr-primary);
-  justify-items: center;
+
+  @include breakpoints('md') {
+    grid-template-columns: repeat(2, auto); /* Defines two columns */
+    grid-template-rows: repeat(2, auto);
+  }
 
   &__number {
     font-size: 1.125rem;
@@ -37,6 +45,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include breakpoints('md') {
+      grid-row: 1 / 3;
+    }
   }
 
   &__heading {
