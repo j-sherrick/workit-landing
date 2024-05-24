@@ -4,7 +4,7 @@
 *,
 *::before,
 *::after {
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Remove default margin and padding */
@@ -24,8 +24,8 @@ figcaption,
 blockquote,
 dl,
 dd {
-   margin: 0;
-   padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Remove list styles (bullets/numbers) */
@@ -33,16 +33,16 @@ ul,
 ol,
 menu,
 * li {
-   list-style: none;
-   padding: 0;
-   margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* Remove default hyperlink styles */
 a {
-   text-decoration: none;
-   color: inherit;
-   font-weight: inherit;
+  text-decoration: none;
+  color: inherit;
+  font: inherit;
 }
 
 /* Remove default outline styles */
@@ -50,17 +50,15 @@ button,
 input,
 textarea,
 select {
-   outline: none;
-   border: none;
-   font-family: inherit;
-   font-weight: inherit;
+  outline: none;
+  border: none;
+  font: inherit;
+  color: inherit;
 }
 
 /* Set the default button behavior */
 button {
-   cursor: pointer;
-   color: inherit;
-   font-size: inherit;
-   background-color: transparent;
-   padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0;
 }

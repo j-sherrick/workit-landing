@@ -7,11 +7,6 @@
   min-width: 8.3125rem;
   padding: 0.875rem 1.25rem;
 
-  @include breakpoints(md) {
-    width: 11.875rem;
-    padding: 1rem 1.5rem;
-  }
-
   &__primary {
     border: 2px solid var(--workit-clr-secondary);
     background-color: var(--workit-clr-secondary);

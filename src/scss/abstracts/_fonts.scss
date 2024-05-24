@@ -40,11 +40,6 @@ body {
   font-family: 'Manrope', 'Poppins', system-ui, 'sans-serif';
   font-size: 1rem;
   line-height: 1.75rem;
-
-  @include breakpoints(md) {
-    font-size: 1.125rem;
-    line-height: 2rem;
-  }
 }
 
 h1,

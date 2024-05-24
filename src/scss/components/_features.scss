@@ -4,7 +4,7 @@
   background: url('data:image/svg+xml,\
   <svg xmlns="http://www.w3.org/2000/svg"\
   viewBox="0 0 200 100"\
-  preserveAspectRatio="none">\
+  preserveAspectRatio="xMinYMin">\
   <path d="M 0,0\
            L 200,0\
            L 200,95\
@@ -28,11 +28,6 @@
   text-align: center;
   color: var(--workit-clr-primary);
 
-  @include breakpoints('md') {
-    grid-template-columns: repeat(2, auto); /* Defines two columns */
-    grid-template-rows: repeat(2, auto);
-  }
-
   &__number {
     font-size: 1.125rem;
     line-height: 2rem;
@@ -45,19 +40,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    @include breakpoints('md') {
-      grid-row: 1 / 3;
-    }
   }
 
   &__heading {
     font-weight: 500;
     letter-spacing: -0.1ch;
   }
+}
 
-  &__description {
-    font-size: 1rem;
-    line-height: 1.75rem;
+@include breakpoints('md') {
+  .feature {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    column-gap: 2rem;
+    text-align: left;
+    max-width: var(--workit-width-md);
+
+    &__number {
+      grid-row: 1 / 3;
+      align-self: center;
+    }
+
+    &__heading {
+      justify-self: left;
+    }
   }
 }
