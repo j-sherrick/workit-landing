@@ -76,22 +76,22 @@ button {
 
 :root {
   --workit-width-sm: 22rem;
-  --workit-width-md: 43.125rem;
-  --workit-width-founder-md: 35.875rem;
-  --workit-width-lg: 69.5rem;
+  --workit-width-md: 44rem;
+  --workit-width-founder-md: 36rem;
+  --workit-width-lg: 70rem;
 }
 
 @font-face {
   font-family: "Fraunces";
-  src: url("/public/assets/fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf") format("truetype");
+  src: url("/assets/fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf") format("truetype");
 }
 @font-face {
   font-family: "Fraunces 144";
-  src: url("/public/assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf") format("truetype");
+  src: url("/assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf") format("truetype");
 }
 @font-face {
   font-family: "Manrope";
-  src: url("/public/assets/fonts/manrope/Manrope-VariableFont_wght.ttf") format("truetype");
+  src: url("/assets/fonts/manrope/Manrope-VariableFont_wght.ttf") format("truetype");
 }
 body {
   font-family: "Manrope", "Poppins", system-ui, "sans-serif";
@@ -165,13 +165,13 @@ main {
 }
 
 .cta {
-  background: url("/assets/images/bg-arc-1.svg") center/cover no-repeat;
+  background: url("/assets/images/cta-bg-rrect.svg") top center/cover no-repeat;
   color: white;
   width: 100%;
   padding-inline: 1rem;
   position: relative;
 }
-.cta__action {
+.cta__content {
   margin-top: 7.75rem;
   text-align: center;
   display: flex;
@@ -194,6 +194,19 @@ main {
 @media (min-width: 48rem) {
   .cta__image {
     width: 514px;
+  }
+  .cta::before, .cta::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  .cta::before {
+    background: url("/assets/images/bg-pattern-1.svg") no-repeat;
+    background-size: auto;
+    width: 100%;
+    height: 100%;
   }
 }
 .features {
@@ -246,6 +259,26 @@ main {
     justify-self: left;
   }
 }
+@media (min-width: 62rem) {
+  .features {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    max-width: var(--workit-width-lg);
+    align-items: baseline;
+  }
+  .features .feature {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .features .feature__number {
+    align-self: initial;
+    grid-row: auto;
+    justify-self: initial;
+  }
+  .features .feature__heading {
+    justify-self: center;
+  }
+}
 .founder {
   width: 100%;
   padding: 1.5rem 1rem 0;
@@ -276,13 +309,15 @@ main {
 .button {
   font-weight: 700;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  min-width: 8.3125rem;
-  padding: 0.875rem 1.25rem;
+  text-wrap: nowrap;
 }
 .button__primary {
   border: 2px solid var(--workit-clr-secondary);
   background-color: var(--workit-clr-secondary);
   color: var(--workit-clr-primary);
+  font-size: 1rem;
+  padding: 0.625rem 1.375rem;
+  line-height: 2rem;
 }
 .button__primary:hover {
   background-color: var(--workit-clr-primary);
@@ -291,8 +326,6 @@ main {
 .button__secondary {
   border-bottom: 3px solid var(--workit-clr-secondary);
   color: white;
-  padding: 0 0 0.25rem 0;
-  width: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
