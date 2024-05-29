@@ -39,12 +39,9 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
+- CSS Responsive Grid
 - Mobile-first workflow
-- [Sass](https://sass-lang.com/) - Super CSS
-- [TypeScript](https://typescriptlang.org/) - TypeScript
+- [Sass](https://sass-lang.com/) - CSS with superpowers
 
 ### What I learned
 

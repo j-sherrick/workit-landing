@@ -381,15 +381,13 @@ main {
 .founder__message::before {
   content: "";
   position: absolute;
+  background: url("/assets/images/bg-pattern-3.svg") no-repeat;
   width: 300px;
   height: 300px;
+  bottom: -45%;
+  right: -5%;
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
-}
-.founder__message::before {
-  background: url("/assets/images/bg-pattern-3.svg") no-repeat;
-  bottom: 10px;
-  left: -1%;
 }
 .founder__heading {
   font-weight: 500;
@@ -409,6 +407,9 @@ main {
     padding: 3rem 3.5rem 3.5rem;
     text-align: left;
     align-self: end;
+  }
+  .founder__message::before {
+    opacity: 1;
   }
   .founder__heading {
     font-size: 3rem;
@@ -438,14 +439,13 @@ main {
 }
 .button {
   font-weight: 700;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out, color 0.3s ease-in-out;
   text-wrap: nowrap;
 }
 .button__primary {
   border: 2px solid var(--workit-clr-secondary);
   background-color: var(--workit-clr-secondary);
   color: var(--workit-clr-primary);
-  font-size: 1rem;
   padding: 0.625rem 1.375rem;
   line-height: 2rem;
 }
@@ -456,6 +456,15 @@ main {
 .button__secondary {
   border-bottom: 3px solid var(--workit-clr-secondary);
   color: white;
+}
+.button__secondary:hover {
+  color: var(--workit-clr-secondary);
+}
+
+@media (min-width: 62rem) {
+  .button__primary {
+    padding: 0.75rem 1.875rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

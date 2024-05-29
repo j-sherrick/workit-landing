@@ -23,16 +23,13 @@
     &::before {
       content: '';
       position: absolute;
+      background: url('/assets/images/bg-pattern-3.svg') no-repeat;
       width: 300px;
       height: 300px;
+      bottom: -45%;
+      right: -5%;
       opacity: 0;
       transition: opacity 0.4s ease-in-out;
-    }
-
-    &::before {
-      background: url('/assets/images/bg-pattern-3.svg') no-repeat;
-      bottom: 10px;
-      left: -1%;
     }
   }
 
@@ -57,6 +54,10 @@
       // height: 375px;
       text-align: left;
       align-self: end;
+
+      &::before {
+        opacity: 1;
+      }
     }
 
     &__heading {

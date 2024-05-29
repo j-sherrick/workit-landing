@@ -69,6 +69,10 @@
 
 @include breakpoints('lg') {
   .cta {
+    &__content {
+      // margin-top: 9.125rem;
+    }
+
     &__image {
       margin-top: 1rem;
       width: 767px;
