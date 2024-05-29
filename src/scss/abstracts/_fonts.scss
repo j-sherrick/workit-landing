@@ -50,26 +50,49 @@ h6 {
   font-family: 'Fraunces', 'Georgia', 'Times New Roman', serif;
 }
 
+// Small screen width heading sizes
 h1 {
   @include heading-md;
-
-  @include breakpoints(md) {
-    @include heading-lg;
-  }
 }
 
 h2 {
   @include heading-sm;
-
-  @include breakpoints(md) {
-    @include heading-md;
-  }
 }
 
 h3 {
   @include heading-xs;
+}
 
-  @include breakpoints(md) {
+// Medium screen width font sizes
+@include breakpoints('md') {
+  h1 {
+    @include heading-md;
+  }
+
+  h2 {
+    @include heading-sm;
+  }
+
+  h3 {
+    @include heading-xs;
+  }
+}
+
+// Large screen width heading sizes
+@include breakpoints('lg') {
+  body {
+    font-size: 1.125rem;
+    line-height: 2rem;
+  }
+  h1 {
+    @include heading-lg;
+  }
+
+  h2 {
+    @include heading-md;
+  }
+
+  h3 {
     @include heading-sm;
   }
 }

@@ -1,3 +1,21 @@
+@use '../abstracts/mixins' as *;
+
 .menu {
   color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+
+@include breakpoints('md') {
+  .menu {
+    padding-inline: 2.5rem;
+  }
+}
+
+@include breakpoints('lg') {
+  .menu {
+    padding-inline: 0.25rem;
+    max-width: var(--workit-width-lg);
+  }
 }

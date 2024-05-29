@@ -1,18 +1,7 @@
 @use '../abstracts/mixins' as *;
 
 .features {
-  background: url('data:image/svg+xml,\
-  <svg xmlns="http://www.w3.org/2000/svg"\
-  viewBox="0 0 200 100"\
-  preserveAspectRatio="xMinYMin">\
-  <path d="M 0,0\
-           L 200,0\
-           L 200,95\
-           Q 100,100 0,95\
-           Z" fill="hsla(276, 100%, 99%, 1)"/>\
-  </svg>')
-      no-repeat,
-    white;
+  background: url('/assets/images/ft-bg-rrect.svg') top center / cover no-repeat, white;
   background-size: cover;
   display: grid;
   gap: 2.5rem;
@@ -27,6 +16,7 @@
 
   text-align: center;
   color: var(--workit-clr-primary);
+  width: var(--workit-width-sm);
 
   &__number {
     font-size: 1.125rem;
@@ -54,6 +44,7 @@
     grid-template-rows: repeat(2, auto);
     column-gap: 2rem;
     text-align: left;
+    width: auto;
     max-width: var(--workit-width-md);
 
     &__number {

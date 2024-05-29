@@ -1,0 +1,35 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: clamp(4rem, 5rem, 6rem);
+
+  .social {
+    display: grid;
+    grid-template:
+      'a a a' auto
+      'b c d' 1fr;
+    justify-items: center;
+    row-gap: 3.625rem;
+    column-gap: 1.75rem;
+
+    &__link {
+      &--workit {
+        grid-area: a;
+      }
+
+      &--facebook {
+        grid-area: b;
+      }
+
+      &--twitter {
+        grid-area: c;
+      }
+
+      &--instagram {
+        grid-area: d;
+      }
+    }
+  }
+}
