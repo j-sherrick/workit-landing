@@ -227,6 +227,7 @@ main {
   width: 100%;
   padding-inline: 1rem;
   position: relative;
+  overflow: hidden;
 }
 .cta__content {
   margin-top: 7.75rem;
@@ -252,17 +253,17 @@ main {
   width: 300px;
   height: 300px;
   opacity: 0;
-  transition: opacity 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .cta::before {
   background: url("/assets/images/bg-pattern-1.svg") no-repeat;
   top: 116px;
-  left: -1%;
+  left: -175px;
 }
 .cta::after {
   background: url("/assets/images/bg-pattern-2.svg") no-repeat;
-  left: 85%;
-  top: 314px;
+  right: -240px;
+  top: 300px;
 }
 
 @media (min-width: 48rem) {
@@ -278,6 +279,12 @@ main {
   .cta__image {
     margin-top: 1rem;
     width: 767px;
+  }
+  .cta::before {
+    left: -155px;
+  }
+  .cta::after {
+    right: -200px;
   }
 }
 .features {
@@ -369,6 +376,20 @@ main {
   color: white;
   padding: 2rem;
   text-align: center;
+  position: relative;
+}
+.founder__message::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+.founder__message::before {
+  background: url("/assets/images/bg-pattern-3.svg") no-repeat;
+  bottom: 10px;
+  left: -1%;
 }
 .founder__heading {
   font-weight: 500;

@@ -6,6 +6,7 @@
   width: 100%;
   padding-inline: 1rem;
   position: relative;
+  overflow: hidden;
 
   &__content {
     margin-top: 7.75rem;
@@ -36,19 +37,19 @@
     width: 300px;
     height: 300px;
     opacity: 0;
-    transition: opacity 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
 
   &::before {
     background: url('/assets/images/bg-pattern-1.svg') no-repeat;
     top: 116px;
-    left: -1%;
+    left: -175px;
   }
 
   &::after {
     background: url('/assets/images/bg-pattern-2.svg') no-repeat;
-    left: 85%;
-    top: 314px;
+    right: -240px;
+    top: 300px;
   }
 }
 
@@ -71,6 +72,14 @@
     &__image {
       margin-top: 1rem;
       width: 767px;
+    }
+
+    &::before {
+      left: -155px;
+    }
+
+    &::after {
+      right: -200px;
     }
   }
 }
