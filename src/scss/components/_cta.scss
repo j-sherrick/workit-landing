@@ -1,7 +1,7 @@
 @use '../abstracts/mixins' as *;
 
 .cta {
-  background: url('/public/assets/images/cta-bg-rrect.svg') top center / cover no-repeat;
+  background: url('../images/cta-bg-rrect.svg') top center / cover no-repeat;
   color: white;
   width: 100%;
   padding-inline: 1rem;
@@ -41,13 +41,13 @@
   }
 
   &::before {
-    background: url('/public/assets/images/bg-pattern-1.svg') no-repeat;
+    background: url('../images/bg-pattern-1.svg') no-repeat;
     top: 116px;
     left: -175px;
   }
 
   &::after {
-    background: url('/public/assets/images/bg-pattern-2.svg') no-repeat;
+    background: url('../images/bg-pattern-2.svg') no-repeat;
     right: -240px;
     top: 300px;
   }
