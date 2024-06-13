@@ -2,7 +2,7 @@
   "name": "workit-landing",
   "version": "1.0.0",
   "description": "This is a solution to the Workit landing page challenge on Frontend Mentor...",
-  "main": "public/index.html",
+  "main": "index.html",
   "scripts": {
     "compile:sass": "sass --watch src/scss/style.scss public/assets/css/style.css"
   },

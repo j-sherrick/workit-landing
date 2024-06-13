@@ -86,15 +86,15 @@ button {
 
 @font-face {
   font-family: "Fraunces";
-  src: url("/assets/fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf") format("truetype");
+  src: url("/public/assets/fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf") format("truetype");
 }
 @font-face {
   font-family: "Fraunces 144";
-  src: url("/assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf") format("truetype");
+  src: url("/public/assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf") format("truetype");
 }
 @font-face {
   font-family: "Manrope";
-  src: url("/assets/fonts/manrope/Manrope-VariableFont_wght.ttf") format("truetype");
+  src: url("/public/assets/fonts/manrope/Manrope-VariableFont_wght.ttf") format("truetype");
 }
 body {
   font-family: "Manrope", "Poppins", system-ui, "sans-serif";
@@ -222,7 +222,7 @@ main {
   }
 }
 .cta {
-  background: url("/assets/images/cta-bg-rrect.svg") top center/cover no-repeat;
+  background: url("/public/assets/images/cta-bg-rrect.svg") top center/cover no-repeat;
   color: white;
   width: 100%;
   padding-inline: 1rem;
@@ -256,12 +256,12 @@ main {
   transition: all 0.4s ease-in-out;
 }
 .cta::before {
-  background: url("/assets/images/bg-pattern-1.svg") no-repeat;
+  background: url("/public/assets/images/bg-pattern-1.svg") no-repeat;
   top: 116px;
   left: -175px;
 }
 .cta::after {
-  background: url("/assets/images/bg-pattern-2.svg") no-repeat;
+  background: url("/public/assets/images/bg-pattern-2.svg") no-repeat;
   right: -240px;
   top: 300px;
 }
@@ -288,7 +288,7 @@ main {
   }
 }
 .features {
-  background: url("/assets/images/ft-bg-rrect.svg") top center/cover no-repeat, white;
+  background: url("/public/assets/images/ft-bg-rrect.svg") top center/cover no-repeat, white;
   background-size: cover;
   display: grid;
   gap: 2.5rem;
@@ -381,7 +381,7 @@ main {
 .founder__message::before {
   content: "";
   position: absolute;
-  background: url("/assets/images/bg-pattern-3.svg") no-repeat;
+  background: url("/public/assets/images/bg-pattern-3.svg") no-repeat;
   width: 300px;
   height: 300px;
   bottom: -45%;

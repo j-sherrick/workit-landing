@@ -1,7 +1,7 @@
 @use '../abstracts/mixins' as *;
 
 .features {
-  background: url('/assets/images/ft-bg-rrect.svg') top center / cover no-repeat, white;
+  background: url('/public/assets/images/ft-bg-rrect.svg') top center / cover no-repeat, white;
   background-size: cover;
   display: grid;
   gap: 2.5rem;
