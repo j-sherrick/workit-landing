@@ -1,9 +1,15 @@
 {
   "name": "workit-landing",
+  "source": "src/index.html",
   "version": "1.0.0",
   "description": "This is a solution to the Workit landing page challenge on Frontend Mentor...",
   "scripts": {
-    "compile:sass": "sass --watch src/scss/style.scss public/assets/css/style.css"
+    "start": "npx parcel ./src/index.html",
+    "prebuild-dev": "npx shx rm -rf dist/",
+    "build-dev": "npx parcel build ./src/index.html --no-optimize --public-url ./",
+    "prebuild": "npx shx rm -rf dist/",
+    "build": "npx parcel build ./src/index.html --public-url ./",
+    "push-gh": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
   },
   "repository": {
     "type": "git",
@@ -27,5 +33,8 @@
   "bugs": {
     "url": "https://github.com/j-sherrick/workit-landing/issues"
   },
-  "homepage": "https://github.com/j-sherrick/workit-landing#readme"
+  "homepage": "https://github.com/j-sherrick/workit-landing#readme",
+  "devDependencies": {
+    "sass": "^1.77.5"
+  }
 }

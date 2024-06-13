@@ -29,11 +29,17 @@ Users should be able to:
 
 ### Screenshot
 
+#### My version:
+
 ![Screenshot of the workit landing page shown at different screen sizes and orientations.](/public/assets/images/screenshot01.png)
+
+#### The version to copy:
+
+![Screenshot of ideal workit landing page from FrontendMentor.io](/public/assets/images/preview.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://github.com/j-sherrick/workit-landing](https://github.com/j-sherrick/workit-landing)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
