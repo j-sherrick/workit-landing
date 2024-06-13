@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot of the workit landing page shown at different screen sizes and orientations.](/docs/assets/screenshot01.png)
+![Screenshot of the workit landing page shown at different screen sizes and orientations.](/public/assets/images/screenshot01.png)
 
 ### Links
 
