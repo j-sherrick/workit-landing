@@ -29,6 +29,8 @@ Users should be able to:
 
 ### Screenshot
 
+![Screenshot of the workit landing page shown at different screen sizes and orientations.](/docs/assets/screenshot01.png)
+
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
@@ -38,9 +40,9 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS Responsive Grid
-- Mobile-first workflow
+- Semantic HTML5
+- Responsive Grid
+- Mobile-first
 - [Sass](https://sass-lang.com/) - CSS with superpowers
 
 ### What I learned
